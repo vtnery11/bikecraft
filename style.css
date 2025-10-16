@@ -153,3 +153,45 @@ p {
   text-align: center;
   box-sizing: border-box;
 }
+
+/*responsividade */
+@media (max-width: 900px) {
+  .introducao-cover img {
+    object-fit: cover;
+    height: 100%;
+  }
+
+  .conteudo-vantagem {
+    grid-template-columns: 1fr;
+  }
+
+  .conteudo {
+    grid-template-columns: 1fr;
+  }
+
+  .subtitulo {
+    text-align: center;
+  }
+
+  .introducao::before {
+    display: none;
+  }
+
+  body {
+    gap: 30px;
+    margin-top: 20px;
+  }
+
+  .header {
+    gap: 30px;
+  }
+
+  .introducao {
+    text-align: left;
+    justify-items: start;
+  }
+
+  .subtitulo {
+    font-size: 3rem;
+  }
+}
